@@ -27,7 +27,7 @@ import java.util.Random;
 @SpringBootTest
 public class C6MilvusSearchQueryTest {
 
-    final Integer SEARCH_K = 2; // TopK
+    final Integer SEARCH_K = 2; // TopK 要返回的最相似结果的数量。
     final String SEARCH_PARAM = "{\"nprobe\":10, \"offset\":0}";    // Params
 
     @Autowired

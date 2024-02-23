@@ -27,8 +27,6 @@ public class C2MilvusCollectionTest {
      * 主键 book_id
      * word_count   INT64
      * book_intro   二维浮点向量字段
-     *
-     *
      */
     @Test
     public void createCollection(){

@@ -17,17 +17,14 @@ import java.util.List;
 
 @SpringBootTest
 public class C3MilvusPartitionTest {
-    /**
-     * Milvus 允许您将大量矢量数据划分为少量分区。然后，可以将搜索和其他操作限制在一个分区内以提高性能。
-     *
-     * 一个集合由一个或多个分区组成。在创建新集合时，Milvus 会创建一个默认分区_default。
-     */
 
     @Autowired
     MilvusServiceClient milvusClient;
 
     /**
      * 创建分区
+     * Milvus 允许您将大量矢量数据划分为少量分区。然后，可以将搜索和其他操作限制在一个分区内以提高性能。
+     * 一个集合由一个或多个分区组成。在创建新集合时，Milvus 会创建一个默认分区_default。
      */
     @Test
     public void createPartition(){
